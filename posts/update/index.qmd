@@ -1,0 +1,9 @@
+---
+title: "Updates"
+author: "Vivian"
+date: "2024-06-04"
+categories: [nlp]
+image: "image.jpg"
+---
+
+1. spacy model

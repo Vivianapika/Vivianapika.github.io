@@ -3,6 +3,7 @@ project:
 
 website:
   title: "Vivian"
+  description: "This is Vivian's personal Blog."
   navbar:
     right:
       - about.qmd

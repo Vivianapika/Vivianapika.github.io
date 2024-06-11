@@ -1,0 +1,36 @@
+---
+title: "Solution for Phone Addiction"
+author: "Vivian"
+date: "2024-06-10"
+categories: [adhd, self-care]
+image: "image.jpg"
+---
+
+## Phone addiction
+Do I want to start the day by playing video games and scrolling the short videos or watching long videos? No I don't. I need some intervention. What can I do to help myself from doing it over and over again? How exactly? It's not fair.
+Maybe one thing I can do is to start the day with reviewing my todoist list. I don't want to see stuff that is overdue to be honest.
+
+[Adults and teens turn to 'dumbphones' to cut screen time](https://www.bbc.com/news/articles/c7227njm45eo)
+
+My solution is to switch to a phone with smaller screen. So far it's the best option, because I had to have a working gps navigation for my car drive. And after I read about all the options for dumbphones, this phone jump out to me. I ordered this one and next step is to get rid of my iphone and ipod, once and for all. Most tasks can be done on my mac, and it'll be how it works. Including the todo list app I've been working with.
+Jelly Star - The World's Smallest Android 13 Smartphone
+[https://www.unihertz.com/](https://www.unihertz.com/)
+
+In order to get rid of iphone, what do I need to do?
+[https://support.apple.com/en-us/109511](https://support.apple.com/en-us/109511)
+- [x] deregister iMessage on both iphon and mac
+- [x] unpair your Apple Watch
+- [ ] backup the phone
+- [ ] backup the wechat history
+- [ ] manage wechat storage
+- [ ] Let some people know that I will be switching to a non-Apple phone, and suggest them to send me SMS messages. WhatsApp is another alternative, but for long term solution would better be SMS, since it's going to be useful for a real dumbphone lifestyle.
+
+## Iphone Adjustment for now
+- [x] Apply greyscale color filters to display 
+- [x] Delete all social media app and games (not sustainable for the following reasons)
+    1. even though I know it's not healthy for me to install them back, but there is nothing to prevent me from installing them again, and it has happend to me numerous times
+    2. some social media app I can't abandon completely because I might lose some contacts by doing that.
+- [x] For social media app that has TikTok-like feature, delete them all and use website on mac if nessasary.
+
+## Dumbphone
+I just pre-ordered Light phone 3 and hopefully it'll be my primary phone and Jelly Star can work as a secondary.

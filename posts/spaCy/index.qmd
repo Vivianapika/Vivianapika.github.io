@@ -1,0 +1,8 @@
+---
+title: "Learning spaCy"
+author: "Vivian"
+date: "2024-06-12"
+categories: [nlp]
+---
+
+![Architecture](architecture.svg)

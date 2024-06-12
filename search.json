@@ -7,53 +7,11 @@
     "text": "About this blog"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "posts/spaCy/index.html",
+    "href": "posts/spaCy/index.html",
+    "title": "Learning spaCy",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "posts/crm/index.html",
-    "href": "posts/crm/index.html",
-    "title": "Daily",
-    "section": "",
-    "text": "tbc"
-  },
-  {
-    "objectID": "posts/addiction/index.html",
-    "href": "posts/addiction/index.html",
-    "title": "Solution for Phone Addiction",
-    "section": "",
-    "text": "Do I want to start the day by playing video games and scrolling the short videos or watching long videos? No I don’t. I need some intervention. What can I do to help myself from doing it over and over again? How exactly? It’s not fair. Maybe one thing I can do is to start the day with reviewing my todoist list. I don’t want to see stuff that is overdue to be honest.\nAdults and teens turn to ‘dumbphones’ to cut screen time\nMy solution is to switch to a phone with smaller screen. So far it’s the best option, because I had to have a working gps navigation for my car drive. And after I read about all the options for dumbphones, this phone jump out to me. I ordered this one and next step is to get rid of my iphone and ipod, once and for all. Most tasks can be done on my mac, and it’ll be how it works. Including the todo list app I’ve been working with. Jelly Star - The World’s Smallest Android 13 Smartphone https://www.unihertz.com/\nIn order to get rid of iphone, what do I need to do? https://support.apple.com/en-us/109511 - [x] deregister iMessage on both iphon and mac - [x] unpair your Apple Watch - [ ] backup the phone - [ ] backup the wechat history - [ ] manage wechat storage - [ ] Let some people know that I will be switching to a non-Apple phone, and suggest them to send me SMS messages. WhatsApp is another alternative, but for long term solution would better be SMS, since it’s going to be useful for a real dumbphone lifestyle."
-  },
-  {
-    "objectID": "posts/addiction/index.html#phone-addiction",
-    "href": "posts/addiction/index.html#phone-addiction",
-    "title": "Solution for Phone Addiction",
-    "section": "",
-    "text": "Do I want to start the day by playing video games and scrolling the short videos or watching long videos? No I don’t. I need some intervention. What can I do to help myself from doing it over and over again? How exactly? It’s not fair. Maybe one thing I can do is to start the day with reviewing my todoist list. I don’t want to see stuff that is overdue to be honest.\nAdults and teens turn to ‘dumbphones’ to cut screen time\nMy solution is to switch to a phone with smaller screen. So far it’s the best option, because I had to have a working gps navigation for my car drive. And after I read about all the options for dumbphones, this phone jump out to me. I ordered this one and next step is to get rid of my iphone and ipod, once and for all. Most tasks can be done on my mac, and it’ll be how it works. Including the todo list app I’ve been working with. Jelly Star - The World’s Smallest Android 13 Smartphone https://www.unihertz.com/\nIn order to get rid of iphone, what do I need to do? https://support.apple.com/en-us/109511 - [x] deregister iMessage on both iphon and mac - [x] unpair your Apple Watch - [ ] backup the phone - [ ] backup the wechat history - [ ] manage wechat storage - [ ] Let some people know that I will be switching to a non-Apple phone, and suggest them to send me SMS messages. WhatsApp is another alternative, but for long term solution would better be SMS, since it’s going to be useful for a real dumbphone lifestyle."
-  },
-  {
-    "objectID": "posts/addiction/index.html#iphone-adjustment-for-now",
-    "href": "posts/addiction/index.html#iphone-adjustment-for-now",
-    "title": "Solution for Phone Addiction",
-    "section": "Iphone Adjustment for now",
-    "text": "Iphone Adjustment for now\n\nApply greyscale color filters to display\nDelete all social media app and games (not sustainable for the following reasons)\n\neven though I know it’s not healthy for me to install them back, but there is nothing to prevent me from installing them again, and it has happend to me numerous times\nsome social media app I can’t abandon completely because I might lose some contacts by doing that.\n\nFor social media app that has TikTok-like feature, delete them all and use website on mac if nessasary."
-  },
-  {
-    "objectID": "posts/addiction/index.html#dumbphone",
-    "href": "posts/addiction/index.html#dumbphone",
-    "title": "Solution for Phone Addiction",
-    "section": "Dumbphone",
-    "text": "Dumbphone\nI just pre-ordered Light phone 3 and hopefully it’ll be my primary phone and Jelly Star can work as a secondary."
-  },
-  {
-    "objectID": "posts/update/index.html",
-    "href": "posts/update/index.html",
-    "title": "Updates",
-    "section": "",
-    "text": "spacy model"
+    "text": "Architecture"
   },
   {
     "objectID": "posts/cen/index.html",
@@ -77,10 +35,59 @@
     "text": "When Ultra-Materialism meets Anti-consumerism\nShe had started working instantly after graduation, since then, she had always been in a full time job, even though not great salary, she don’t need extra money because she’s not interested in chasing after material things. She had always been told by her parents that she’s been so lucky to have them, that they gave her so much and not a lot parents can actually do that. Since then she had not asked money from her parents. They spent money on her education."
   },
   {
+    "objectID": "posts/update/index.html",
+    "href": "posts/update/index.html",
+    "title": "Updates",
+    "section": "",
+    "text": "spacy model"
+  },
+  {
+    "objectID": "posts/addiction/index.html",
+    "href": "posts/addiction/index.html",
+    "title": "Solution for Phone Addiction",
+    "section": "",
+    "text": "This is my first step of digital declutter process. Do I want to start the day by playing video games and scrolling the short videos or watching long videos? No I don’t. I need some intervention. What can I do to help myself from doing it over and over again? How exactly? It’s not fair. Maybe one thing I can do is to start the day with reviewing my todoist list. I don’t want to see stuff that is overdue to be honest.\nAdults and teens turn to ‘dumbphones’ to cut screen time\nMy solution is to switch to a phone with smaller screen. So far it’s the best option, because I had to have a working gps navigation for my car drive. And after I read about all the options for dumbphones, this phone jump out to me. I ordered this one and next step is to get rid of my iphone and ipod, once and for all. Most tasks can be done on my mac, and it’ll be how it works. Including the todo list app I’ve been working with. Jelly Star - The World’s Smallest Android 13 Smartphone https://www.unihertz.com/\nIn order to get rid of iphone, what do I need to do? https://support.apple.com/en-us/109511 - [x] deregister iMessage on both iphon and mac - [x] unpair your Apple Watch - [ ] backup the phone - [ ] backup the wechat history - [ ] manage wechat storage - [ ] Let some people know that I will be switching to a non-Apple phone, and suggest them to send me SMS messages. WhatsApp is another alternative, but for long term solution would better be SMS, since it’s going to be useful for a real dumbphone lifestyle."
+  },
+  {
+    "objectID": "posts/addiction/index.html#replace-iphone",
+    "href": "posts/addiction/index.html#replace-iphone",
+    "title": "Solution for Phone Addiction",
+    "section": "",
+    "text": "This is my first step of digital declutter process. Do I want to start the day by playing video games and scrolling the short videos or watching long videos? No I don’t. I need some intervention. What can I do to help myself from doing it over and over again? How exactly? It’s not fair. Maybe one thing I can do is to start the day with reviewing my todoist list. I don’t want to see stuff that is overdue to be honest.\nAdults and teens turn to ‘dumbphones’ to cut screen time\nMy solution is to switch to a phone with smaller screen. So far it’s the best option, because I had to have a working gps navigation for my car drive. And after I read about all the options for dumbphones, this phone jump out to me. I ordered this one and next step is to get rid of my iphone and ipod, once and for all. Most tasks can be done on my mac, and it’ll be how it works. Including the todo list app I’ve been working with. Jelly Star - The World’s Smallest Android 13 Smartphone https://www.unihertz.com/\nIn order to get rid of iphone, what do I need to do? https://support.apple.com/en-us/109511 - [x] deregister iMessage on both iphon and mac - [x] unpair your Apple Watch - [ ] backup the phone - [ ] backup the wechat history - [ ] manage wechat storage - [ ] Let some people know that I will be switching to a non-Apple phone, and suggest them to send me SMS messages. WhatsApp is another alternative, but for long term solution would better be SMS, since it’s going to be useful for a real dumbphone lifestyle."
+  },
+  {
+    "objectID": "posts/addiction/index.html#iphone-adjustment-for-now",
+    "href": "posts/addiction/index.html#iphone-adjustment-for-now",
+    "title": "Solution for Phone Addiction",
+    "section": "IPhone Adjustment for now",
+    "text": "IPhone Adjustment for now\nEventually the goal is to get rid of IPhone, because it’s not good for my ADHD brain. - [x] Apply greyscale color filters to display - [x] Delete all social media app and games (not sustainable for the following reasons) 1. even though I know it’s not healthy for me to install them back, but there is nothing to prevent me from installing them again, and it has happend to me numerous times 2. some social media app I can’t abandon completely because I might lose some contacts by doing that. - [x] For social media app that has TikTok-like feature, delete them all and use website on mac if nessasary."
+  },
+  {
+    "objectID": "posts/addiction/index.html#dumbphone-in-the-future",
+    "href": "posts/addiction/index.html#dumbphone-in-the-future",
+    "title": "Solution for Phone Addiction",
+    "section": "Dumbphone in the future",
+    "text": "Dumbphone in the future\nI just pre-ordered Light phone 3 and hopefully it’ll be my primary phone and Jelly Star can work as a secondary. Remarkable2 is an almost perfect product but it doesn’t support DRM protected ebooks."
+  },
+  {
+    "objectID": "posts/crm/index.html",
+    "href": "posts/crm/index.html",
+    "title": "Daily",
+    "section": "",
+    "text": "tbc"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Blog posts",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n\n\n\n\n  \n\n\n\n\nSolution for Phone Addiction\n\n\n\n\n\n\n\nadhd\n\n\nself-care\n\n\n\n\n\n\n\n\n\n\n\nJun 10, 2024\n\n\nVivian\n\n\n\n\n\n\n  \n\n\n\n\nDaily\n\n\n\n\n\n\n\nstory\n\n\n\n\n\n\n\n\n\n\n\nJun 7, 2024\n\n\nVivian\n\n\n\n\n\n\n  \n\n\n\n\nUpdates\n\n\n\n\n\n\n\nnlp\n\n\n\n\n\n\n\n\n\n\n\nJun 4, 2024\n\n\nVivian\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJun 1, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n\n\n\n\n  \n\n\n\n\nLearning spaCy\n\n\n\n\n\n\n\nnlp\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2024\n\n\nVivian\n\n\n\n\n\n\n  \n\n\n\n\nSolution for Phone Addiction\n\n\n\n\n\n\n\nadhd\n\n\nminimalism\n\n\n\n\n\n\n\n\n\n\n\nJun 10, 2024\n\n\nVivian\n\n\n\n\n\n\n  \n\n\n\n\nDaily\n\n\n\n\n\n\n\nstory\n\n\n\n\n\n\n\n\n\n\n\nJun 7, 2024\n\n\nVivian\n\n\n\n\n\n\n  \n\n\n\n\nUpdates\n\n\n\n\n\n\n\nnlp\n\n\n\n\n\n\n\n\n\n\n\nJun 4, 2024\n\n\nVivian\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJun 1, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   }
 ]

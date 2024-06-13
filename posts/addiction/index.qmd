@@ -19,6 +19,7 @@ Jelly Star - The World's Smallest Android 13 Smartphone
 
 In order to get rid of iphone, what do I need to do?
 [https://support.apple.com/en-us/109511](https://support.apple.com/en-us/109511)
+
 - [x] deregister iMessage on both iphon and mac
 - [x] unpair your Apple Watch
 - [ ] backup the phone
@@ -28,6 +29,7 @@ In order to get rid of iphone, what do I need to do?
 
 ## IPhone Adjustment for now
 Eventually the goal is to get rid of IPhone, because it's not good for my ADHD brain.
+
 - [x] Apply greyscale color filters to display 
 - [x] Delete all social media app and games (not sustainable for the following reasons)
     1. even though I know it's not healthy for me to install them back, but there is nothing to prevent me from installing them again, and it has happend to me numerous times

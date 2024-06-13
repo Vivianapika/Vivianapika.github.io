@@ -61,6 +61,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -135,7 +138,13 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#spacy-101" id="toc-spacy-101" class="nav-link active" data-scroll-target="#spacy-101">spaCy 101</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -143,14 +152,41 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="architecture.svg" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Architecture</figcaption>
-</figure>
+<p>This is a post about NLP in a Quarto blog. Welcome!</p>
+<section id="spacy-101" class="level2">
+<h2 class="anchored" data-anchor-id="spacy-101">spaCy 101</h2>
+<p><a href="https://spacy.io/usage/spacy-101"></a></p>
+<p><img src="pipeline.svg" class="img-fluid" alt="pipeline"> <img src="architecture.svg" class="img-fluid" alt="Architecture"></p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<div>
+<pre class="mermaid mermaid-js">mindmap
+  root((spaCy))
+    Architecture
+      nlp object
+      ::icon(fa fa-book)
+      Doc object
+      Token object
+      Span object
+    Linguistic annotations
+      On effectivness&lt;br/&gt;and features
+      On Automatic creation
+        Uses
+            Creative techniques
+            Strategic planning
+            Argument mapping
+    Tools
+      Pen and paper
+      Mermaid
+</pre>
+</div>
+</div>
+</div>
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

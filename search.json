@@ -11,7 +11,14 @@
     "href": "posts/spaCy/index.html",
     "title": "Learning spaCy",
     "section": "",
-    "text": "Architecture"
+    "text": "This is a post about NLP in a Quarto blog. Welcome!"
+  },
+  {
+    "objectID": "posts/spaCy/index.html#spacy-101",
+    "href": "posts/spaCy/index.html#spacy-101",
+    "title": "Learning spaCy",
+    "section": "spaCy 101",
+    "text": "spaCy 101\n\n \n\n\n\n\nmindmap\n  root((spaCy))\n    Architecture\n      nlp object\n      ::icon(fa fa-book)\n      Doc object\n      Token object\n      Span object\n    Linguistic annotations\n      On effectivness&lt;br/&gt;and features\n      On Automatic creation\n        Uses\n            Creative techniques\n            Strategic planning\n            Argument mapping\n    Tools\n      Pen and paper\n      Mermaid"
   },
   {
     "objectID": "posts/cen/index.html",
@@ -33,13 +40,6 @@
     "title": "This was where it began",
     "section": "When Ultra-Materialism meets Anti-consumerism",
     "text": "When Ultra-Materialism meets Anti-consumerism\nShe had started working instantly after graduation, since then, she had always been in a full time job, even though not great salary, she don’t need extra money because she’s not interested in chasing after material things. She had always been told by her parents that she’s been so lucky to have them, that they gave her so much and not a lot parents can actually do that. Since then she had not asked money from her parents. They spent money on her education."
-  },
-  {
-    "objectID": "posts/update/index.html",
-    "href": "posts/update/index.html",
-    "title": "Updates",
-    "section": "",
-    "text": "spacy model"
   },
   {
     "objectID": "posts/addiction/index.html",
@@ -70,13 +70,6 @@
     "text": "Dumbphone in the future\nI just pre-ordered Light phone 3 and hopefully it’ll be my primary phone and Jelly Star can work as a secondary. Remarkable2 is an almost perfect product but it doesn’t support DRM protected ebooks."
   },
   {
-    "objectID": "posts/crm/index.html",
-    "href": "posts/crm/index.html",
-    "title": "Daily",
-    "section": "",
-    "text": "tbc"
-  },
-  {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
     "title": "Welcome To My Blog",
@@ -88,6 +81,6 @@
     "href": "index.html",
     "title": "Blog posts",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n\n\n\n\n  \n\n\n\n\nLearning spaCy\n\n\n\n\n\n\n\nnlp\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2024\n\n\nVivian\n\n\n\n\n\n\n  \n\n\n\n\nSolution for Phone Addiction\n\n\n\n\n\n\n\nadhd\n\n\nminimalism\n\n\n\n\n\n\n\n\n\n\n\nJun 10, 2024\n\n\nVivian\n\n\n\n\n\n\n  \n\n\n\n\nDaily\n\n\n\n\n\n\n\nstory\n\n\n\n\n\n\n\n\n\n\n\nJun 7, 2024\n\n\nVivian\n\n\n\n\n\n\n  \n\n\n\n\nUpdates\n\n\n\n\n\n\n\nnlp\n\n\n\n\n\n\n\n\n\n\n\nJun 4, 2024\n\n\nVivian\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJun 1, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n\n\n\n\n  \n\n\n\n\nLearning spaCy\n\n\n\n\n\n\n\nnlp\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2024\n\n\nVivian\n\n\n\n\n\n\n  \n\n\n\n\nSolution for Phone Addiction\n\n\n\n\n\n\n\nadhd\n\n\nminimalism\n\n\n\n\n\n\n\n\n\n\n\nJun 10, 2024\n\n\nVivian\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJun 1, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   }
 ]

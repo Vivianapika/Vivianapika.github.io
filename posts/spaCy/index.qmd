@@ -3,6 +3,35 @@ title: "Learning spaCy"
 author: "Vivian"
 date: "2024-06-12"
 categories: [nlp]
+image: "image.jpg"
 ---
 
+This is a post about NLP in a Quarto blog. Welcome!
+
+## spaCy 101
+[](https://spacy.io/usage/spacy-101)
+
+![pipeline](pipeline.svg)
 ![Architecture](architecture.svg)
+
+
+```{mermaid}
+mindmap
+  root((spaCy))
+    Architecture
+      nlp object
+      ::icon(fa fa-book)
+      Doc object
+      Token object
+      Span object
+    Linguistic annotations
+      On effectivness<br/>and features
+      On Automatic creation
+        Uses
+            Creative techniques
+            Strategic planning
+            Argument mapping
+    Tools
+      Pen and paper
+      Mermaid
+```

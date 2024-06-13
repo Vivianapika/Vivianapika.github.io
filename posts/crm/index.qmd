@@ -3,6 +3,7 @@ title: "Daily"
 author: "Vivian"
 date: "2024-06-07"
 categories: [story]
+draft: True
 ---
 
 tbc

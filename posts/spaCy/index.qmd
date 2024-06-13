@@ -4,6 +4,7 @@ author: "Vivian"
 date: "2024-06-12"
 categories: [nlp]
 image: "image.jpg"
+jupyter: env
 ---
 
 This is a post about NLP in a Quarto blog. Welcome!

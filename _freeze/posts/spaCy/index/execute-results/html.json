@@ -1,0 +1,11 @@
+{
+  "hash": "9b386bc71f7fe396a07e00eb8e2137fc",
+  "result": {
+    "markdown": "---\ntitle: Learning spaCy\nauthor: Vivian\ndate: '2024-06-12'\ncategories:\n  - nlp\nimage: image.jpg\n---\n\nThis is a post about NLP in a Quarto blog. Welcome!\n\n## spaCy 101\n[](https://spacy.io/usage/spacy-101)\n\n![pipeline](pipeline.svg)\n![Architecture](architecture.svg)\n\n::: {.cell execution_count=1}\n\n::: {.cell-output .cell-output-stdout}\n```\nhash value: 3197928453018144401\nstring value: coffee\n```\n:::\n:::\n\n\n::: {.cell execution_count=2}\n\n::: {.cell-output .cell-output-stdout}\n```\ncoffee 3197928453018144401 True\n```\n:::\n:::\n\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

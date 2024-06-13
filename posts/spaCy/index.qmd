@@ -18,20 +18,16 @@ This is a post about NLP in a Quarto blog. Welcome!
 ```{mermaid}
 mindmap
   root((spaCy))
-    Architecture
-      nlp object
-      ::icon(fa fa-book)
-      Doc object
-      Token object
-      Span object
-    Linguistic annotations
-      On effectivness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
+    Language object<br/>nlp
+        Tokenizer
+        Processing<br/>pipeline
+            tagger
+            parser
+            ner
+    Doc object
+        tokens
+        Linguistic<br/>annotations
+          give insights into grammatical structure and features
+          ::icon(fa fa-file)
+    Vocab object
 ```

@@ -4,28 +4,42 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this blog"
+    "text": "Writing is thinking."
   },
   {
     "objectID": "posts/spaCy/index.html",
     "href": "posts/spaCy/index.html",
     "title": "Learning spaCy",
     "section": "",
-    "text": "This is a post about NLP in a Quarto blog. Welcome!"
+    "text": "Spacy 101"
+  },
+  {
+    "objectID": "posts/spaCy/index.html#pipeline-and-architecture",
+    "href": "posts/spaCy/index.html#pipeline-and-architecture",
+    "title": "Learning spaCy",
+    "section": "Pipeline and Architecture",
+    "text": "Pipeline and Architecture"
   },
   {
     "objectID": "posts/spaCy/index.html#vocab-lexemes-and-stringstore",
     "href": "posts/spaCy/index.html#vocab-lexemes-and-stringstore",
     "title": "Learning spaCy",
     "section": "Vocab, Lexemes and StringStore",
-    "text": "Vocab, Lexemes and StringStore\nhttps://spacy.io/usage/spacy-101\n \n\n\nCode\nimport spacy\nnlp = spacy.load(\"en_core_web_sm\")\n\n# Shared vocab and string store\nnlp.vocab.strings.add(\"coffee\")\ncoffee_hash = nlp.vocab.strings[\"coffee\"]\ncoffee_string = nlp.vocab.strings[coffee_hash]\ndoc = nlp(\"I love coffee\")\nprint(\"hash value:\", nlp.vocab.strings[\"coffee\"])\nprint(\"string value:\", nlp.vocab.strings[3197928453018144401])\n\n\nhash value: 3197928453018144401\nstring value: coffee\n\n\n\n\nCode\n# Lexemes: entries in the vocabulary\ndoc = nlp(\"I love coffee\")\nlexeme = nlp.vocab[\"coffee\"]\n# Print the lexical attributes\nprint(lexeme.text, lexeme.orth, lexeme.is_alpha)\n\n\ncoffee 3197928453018144401 True"
+    "text": "Vocab, Lexemes and StringStore\n\n\nCode\nimport spacy\nnlp = spacy.load(\"en_core_web_sm\")\n\n# Shared vocab and string store\nnlp.vocab.strings.add(\"coffee\")\ncoffee_hash = nlp.vocab.strings[\"coffee\"]\ncoffee_string = nlp.vocab.strings[coffee_hash]\ndoc = nlp(\"I love coffee\")\nprint(\"hash value:\", nlp.vocab.strings[\"coffee\"])\nprint(\"string value:\", nlp.vocab.strings[3197928453018144401])\n\n\nhash value: 3197928453018144401\nstring value: coffee\n\n\n\n\nCode\n# Lexemes: entries in the vocabulary\ndoc = nlp(\"I love coffee\")\nlexeme = nlp.vocab[\"coffee\"]\n# Print the lexical attributes\nprint(lexeme.text, lexeme.orth, lexeme.is_alpha)\n\n\ncoffee 3197928453018144401 True"
   },
   {
     "objectID": "posts/spaCy/index.html#doc-span-and-token",
     "href": "posts/spaCy/index.html#doc-span-and-token",
     "title": "Learning spaCy",
     "section": "Doc, Span and Token",
-    "text": "Doc, Span and Token\n\n\nCode\n# Create an nlp object\nimport spacy\nnlp = spacy.blank(\"en\")\n\n# Import the Doc and Span classes\nfrom spacy.tokens import Doc, Span\n\n# The words and spaces to create the doc from\nwords = [\"I\", \"like\", \"David\", \"Bowie\"]\nspaces = [True, True, True, False]\n\n# Create a doc manually\ndoc = Doc(nlp.vocab, words=words, spaces=spaces)\nprint(doc.text)\n\n# Create a span manually\n# span = Span(doc, 0, 2)\n\n# Create a span with a label\n# Create a span for \"David Bowie\" from the doc and assign it the label \"PERSON\"\nspan_with_label = Span(doc, 2, 4, label=\"PERSON\")\nprint(span_with_label.text, span_with_label.label_)\n\n# Add span to the doc.ents (doc's entities)\ndoc.ents = [span_with_label]\n\n# Print entities' text and labels\nprint([(ent.text, ent.label_) for ent in doc.ents])\n\n\nI like David Bowie\nDavid Bowie PERSON\n[('David Bowie', 'PERSON')]"
+    "text": "Doc, Span and Token\n\n\nCode\n# Create an nlp object\nnlp = spacy.blank(\"en\")\n\n# Import the Doc and Span classes\nfrom spacy.tokens import Doc, Span\n\n# The words and spaces to create the doc from\nwords = [\"I\", \"like\", \"David\", \"Bowie\"]\nspaces = [True, True, True, False]\n\n# Create a doc manually\ndoc = Doc(nlp.vocab, words=words, spaces=spaces)\nprint(doc.text)\n\n# Create a span manually\n# span = Span(doc, 0, 2)\n\n# Create a span with a label\n# Create a span for \"David Bowie\" from the doc and assign it the label \"PERSON\"\nspan_with_label = Span(doc, 2, 4, label=\"PERSON\")\nprint(span_with_label.text, span_with_label.label_)\n\n# Add span to the doc.ents (doc's entities)\ndoc.ents = [span_with_label]\n\n# Print entities' text and labels\nprint([(ent.text, ent.label_) for ent in doc.ents])\n\n\nI like David Bowie\nDavid Bowie PERSON\n[('David Bowie', 'PERSON')]"
+  },
+  {
+    "objectID": "posts/spaCy/index.html#data-structures-best-practices",
+    "href": "posts/spaCy/index.html#data-structures-best-practices",
+    "title": "Learning spaCy",
+    "section": "Data structures best practices",
+    "text": "Data structures best practices\n\n\nCode\nnlp = spacy.load(\"en_core_web_sm\")\ndoc = nlp(\"Berlin looks like a nice city\")\n\nfor token in doc:\n    # Check if the current token is a proper noun\n    if token.pos_ == \"PROPN\":\n        # Check if the next token is a verb\n        if token.i + 1 &lt; len(doc):\n            if doc[token.i + 1].pos_ == \"VERB\":\n                result = token.text\n                print(\"Found proper noun before a verb:\", result)\n\n\nFound proper noun before a verb: Berlin"
   },
   {
     "objectID": "posts/cen/index.html",
@@ -53,21 +67,21 @@
     "href": "posts/addiction/index.html",
     "title": "Solution for Phone Addiction",
     "section": "",
-    "text": "This is my first step of digital declutter process. Do I want to start the day by playing video games and scrolling the short videos or watching long videos? No I don’t. I need some intervention. What can I do to help myself from doing it over and over again? How exactly? It’s not fair. Maybe one thing I can do is to start the day with reviewing my todoist list. I don’t want to see stuff that is overdue to be honest.\nAdults and teens turn to ‘dumbphones’ to cut screen time\nMy solution is to switch to a phone with smaller screen. So far it’s the best option, because I had to have a working gps navigation for my car drive. And after I read about all the options for dumbphones, this phone jump out to me. I ordered this one and next step is to get rid of my iphone and ipod, once and for all. Most tasks can be done on my mac, and it’ll be how it works. Including the todo list app I’ve been working with. Jelly Star - The World’s Smallest Android 13 Smartphone https://www.unihertz.com/\nIn order to get rid of iphone, what do I need to do? https://support.apple.com/en-us/109511 - [x] deregister iMessage on both iphon and mac - [x] unpair your Apple Watch - [ ] backup the phone - [ ] backup the wechat history - [ ] manage wechat storage - [ ] Let some people know that I will be switching to a non-Apple phone, and suggest them to send me SMS messages. WhatsApp is another alternative, but for long term solution would better be SMS, since it’s going to be useful for a real dumbphone lifestyle."
+    "text": "This is my first step of digital declutter process. Do I want to start the day by playing video games and scrolling the short videos or watching long videos? No I don’t. I need some intervention. What can I do to help myself from doing it over and over again? How exactly? It’s not fair. Maybe one thing I can do is to start the day with reviewing my todoist list. I don’t want to see stuff that is overdue to be honest.\nAdults and teens turn to ‘dumbphones’ to cut screen time\nMy solution is to switch to a phone with smaller screen. So far it’s the best option, because I had to have a working gps navigation for my car drive. And after I read about all the options for dumbphones, this phone jump out to me. I ordered this one and next step is to get rid of my iphone and ipod, once and for all. Most tasks can be done on my mac, and it’ll be how it works. Including the todo list app I’ve been working with. Jelly Star - The World’s Smallest Android 13 Smartphone https://www.unihertz.com/\nIn order to get rid of iphone, what do I need to do? https://support.apple.com/en-us/109511\n\nderegister iMessage on both iphon and mac\nunpair your Apple Watch\nbackup the phone\nbackup the wechat history\nmanage wechat storage\nLet some people know that I will be switching to a non-Apple phone, and suggest them to send me SMS messages. WhatsApp is another alternative, but for long term solution would better be SMS, since it’s going to be useful for a real dumbphone lifestyle."
   },
   {
     "objectID": "posts/addiction/index.html#replace-iphone",
     "href": "posts/addiction/index.html#replace-iphone",
     "title": "Solution for Phone Addiction",
     "section": "",
-    "text": "This is my first step of digital declutter process. Do I want to start the day by playing video games and scrolling the short videos or watching long videos? No I don’t. I need some intervention. What can I do to help myself from doing it over and over again? How exactly? It’s not fair. Maybe one thing I can do is to start the day with reviewing my todoist list. I don’t want to see stuff that is overdue to be honest.\nAdults and teens turn to ‘dumbphones’ to cut screen time\nMy solution is to switch to a phone with smaller screen. So far it’s the best option, because I had to have a working gps navigation for my car drive. And after I read about all the options for dumbphones, this phone jump out to me. I ordered this one and next step is to get rid of my iphone and ipod, once and for all. Most tasks can be done on my mac, and it’ll be how it works. Including the todo list app I’ve been working with. Jelly Star - The World’s Smallest Android 13 Smartphone https://www.unihertz.com/\nIn order to get rid of iphone, what do I need to do? https://support.apple.com/en-us/109511 - [x] deregister iMessage on both iphon and mac - [x] unpair your Apple Watch - [ ] backup the phone - [ ] backup the wechat history - [ ] manage wechat storage - [ ] Let some people know that I will be switching to a non-Apple phone, and suggest them to send me SMS messages. WhatsApp is another alternative, but for long term solution would better be SMS, since it’s going to be useful for a real dumbphone lifestyle."
+    "text": "This is my first step of digital declutter process. Do I want to start the day by playing video games and scrolling the short videos or watching long videos? No I don’t. I need some intervention. What can I do to help myself from doing it over and over again? How exactly? It’s not fair. Maybe one thing I can do is to start the day with reviewing my todoist list. I don’t want to see stuff that is overdue to be honest.\nAdults and teens turn to ‘dumbphones’ to cut screen time\nMy solution is to switch to a phone with smaller screen. So far it’s the best option, because I had to have a working gps navigation for my car drive. And after I read about all the options for dumbphones, this phone jump out to me. I ordered this one and next step is to get rid of my iphone and ipod, once and for all. Most tasks can be done on my mac, and it’ll be how it works. Including the todo list app I’ve been working with. Jelly Star - The World’s Smallest Android 13 Smartphone https://www.unihertz.com/\nIn order to get rid of iphone, what do I need to do? https://support.apple.com/en-us/109511\n\nderegister iMessage on both iphon and mac\nunpair your Apple Watch\nbackup the phone\nbackup the wechat history\nmanage wechat storage\nLet some people know that I will be switching to a non-Apple phone, and suggest them to send me SMS messages. WhatsApp is another alternative, but for long term solution would better be SMS, since it’s going to be useful for a real dumbphone lifestyle."
   },
   {
     "objectID": "posts/addiction/index.html#iphone-adjustment-for-now",
     "href": "posts/addiction/index.html#iphone-adjustment-for-now",
     "title": "Solution for Phone Addiction",
     "section": "IPhone Adjustment for now",
-    "text": "IPhone Adjustment for now\nEventually the goal is to get rid of IPhone, because it’s not good for my ADHD brain. - [x] Apply greyscale color filters to display - [x] Delete all social media app and games (not sustainable for the following reasons) 1. even though I know it’s not healthy for me to install them back, but there is nothing to prevent me from installing them again, and it has happend to me numerous times 2. some social media app I can’t abandon completely because I might lose some contacts by doing that. - [x] For social media app that has TikTok-like feature, delete them all and use website on mac if nessasary."
+    "text": "IPhone Adjustment for now\nEventually the goal is to get rid of IPhone, because it’s not good for my ADHD brain.\n\nApply greyscale color filters to display\nDelete all social media app and games (not sustainable for the following reasons)\n\neven though I know it’s not healthy for me to install them back, but there is nothing to prevent me from installing them again, and it has happend to me numerous times\nsome social media app I can’t abandon completely because I might lose some contacts by doing that.\n\nFor social media app that has TikTok-like feature, delete them all and use website on mac if nessasary."
   },
   {
     "objectID": "posts/addiction/index.html#dumbphone-in-the-future",

@@ -121,11 +121,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <a class="nav-link" href="../../about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/Vivianapika/Vivianapika.github.io" rel="" target=""><i class="bi bi-github" role="img">
-</i> 
- <span class="menu-text"></span></a>
-  </li>  
 </ul>
             <div class="quarto-navbar-tools">
 </div>
@@ -173,8 +168,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#vocab-lexemes-and-stringstore" id="toc-vocab-lexemes-and-stringstore" class="nav-link active" data-scroll-target="#vocab-lexemes-and-stringstore">Vocab, Lexemes and StringStore</a></li>
+  <li><a href="#pipeline-and-architecture" id="toc-pipeline-and-architecture" class="nav-link active" data-scroll-target="#pipeline-and-architecture">Pipeline and Architecture</a></li>
+  <li><a href="#vocab-lexemes-and-stringstore" id="toc-vocab-lexemes-and-stringstore" class="nav-link" data-scroll-target="#vocab-lexemes-and-stringstore">Vocab, Lexemes and StringStore</a></li>
   <li><a href="#doc-span-and-token" id="toc-doc-span-and-token" class="nav-link" data-scroll-target="#doc-span-and-token">Doc, Span and Token</a></li>
+  <li><a href="#data-structures-best-practices" id="toc-data-structures-best-practices" class="nav-link" data-scroll-target="#data-structures-best-practices">Data structures best practices</a></li>
   </ul>
 </nav>
     </div>
@@ -184,11 +181,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<p>This is a post about NLP in a Quarto blog. Welcome!</p>
+<p><a href="https://spacy.io/usage/spacy-101">Spacy 101</a></p>
+<section id="pipeline-and-architecture" class="level2">
+<h2 class="anchored" data-anchor-id="pipeline-and-architecture">Pipeline and Architecture</h2>
+<p><img src="pipeline.svg" class="img-fluid" width="300" alt="pipeline"> <img src="architecture.svg" class="img-fluid" alt="Architecture"></p>
+</section>
 <section id="vocab-lexemes-and-stringstore" class="level2">
 <h2 class="anchored" data-anchor-id="vocab-lexemes-and-stringstore">Vocab, Lexemes and StringStore</h2>
-<p><a href="https://spacy.io/usage/spacy-101">https://spacy.io/usage/spacy-101</a></p>
-<p><img src="pipeline.svg" class="img-fluid" alt="pipeline"> <img src="architecture.svg" class="img-fluid" alt="Architecture"></p>
 <div class="cell" data-execution_count="1">
 <details>
 <summary>Code</summary>
@@ -228,38 +227,59 @@ string value: coffee</code></pre>
 <details>
 <summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an nlp object</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> spacy</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>nlp <span class="op">=</span> spacy.blank(<span class="st">"en"</span>)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Import the Doc and Span classes</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> spacy.tokens <span class="im">import</span> Doc, Span</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co"># The words and spaces to create the doc from</span></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>words <span class="op">=</span> [<span class="st">"I"</span>, <span class="st">"like"</span>, <span class="st">"David"</span>, <span class="st">"Bowie"</span>]</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>spaces <span class="op">=</span> [<span class="va">True</span>, <span class="va">True</span>, <span class="va">True</span>, <span class="va">False</span>]</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a doc manually</span></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>doc <span class="op">=</span> Doc(nlp.vocab, words<span class="op">=</span>words, spaces<span class="op">=</span>spaces)</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(doc.text)</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a span manually</span></span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="co"># span = Span(doc, 0, 2)</span></span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a span with a label</span></span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a span for "David Bowie" from the doc and assign it the label "PERSON"</span></span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>span_with_label <span class="op">=</span> Span(doc, <span class="dv">2</span>, <span class="dv">4</span>, label<span class="op">=</span><span class="st">"PERSON"</span>)</span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(span_with_label.text, span_with_label.label_)</span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Add span to the doc.ents (doc's entities)</span></span>
-<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>doc.ents <span class="op">=</span> [span_with_label]</span>
-<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Print entities' text and labels</span></span>
-<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>([(ent.text, ent.label_) <span class="cf">for</span> ent <span class="kw">in</span> doc.ents])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>nlp <span class="op">=</span> spacy.blank(<span class="st">"en"</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Import the Doc and Span classes</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> spacy.tokens <span class="im">import</span> Doc, Span</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># The words and spaces to create the doc from</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>words <span class="op">=</span> [<span class="st">"I"</span>, <span class="st">"like"</span>, <span class="st">"David"</span>, <span class="st">"Bowie"</span>]</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>spaces <span class="op">=</span> [<span class="va">True</span>, <span class="va">True</span>, <span class="va">True</span>, <span class="va">False</span>]</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a doc manually</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>doc <span class="op">=</span> Doc(nlp.vocab, words<span class="op">=</span>words, spaces<span class="op">=</span>spaces)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(doc.text)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a span manually</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="co"># span = Span(doc, 0, 2)</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a span with a label</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a span for "David Bowie" from the doc and assign it the label "PERSON"</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>span_with_label <span class="op">=</span> Span(doc, <span class="dv">2</span>, <span class="dv">4</span>, label<span class="op">=</span><span class="st">"PERSON"</span>)</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(span_with_label.text, span_with_label.label_)</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Add span to the doc.ents (doc's entities)</span></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>doc.ents <span class="op">=</span> [span_with_label]</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Print entities' text and labels</span></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>([(ent.text, ent.label_) <span class="cf">for</span> ent <span class="kw">in</span> doc.ents])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>I like David Bowie
 David Bowie PERSON
 [('David Bowie', 'PERSON')]</code></pre>
+</div>
+</div>
+</section>
+<section id="data-structures-best-practices" class="level2">
+<h2 class="anchored" data-anchor-id="data-structures-best-practices">Data structures best practices</h2>
+<div class="cell" data-execution_count="4">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>nlp <span class="op">=</span> spacy.load(<span class="st">"en_core_web_sm"</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>doc <span class="op">=</span> nlp(<span class="st">"Berlin looks like a nice city"</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> token <span class="kw">in</span> doc:</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Check if the current token is a proper noun</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> token.pos_ <span class="op">==</span> <span class="st">"PROPN"</span>:</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Check if the next token is a verb</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> token.i <span class="op">+</span> <span class="dv">1</span> <span class="op">&lt;</span> <span class="bu">len</span>(doc):</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>            <span class="cf">if</span> doc[token.i <span class="op">+</span> <span class="dv">1</span>].pos_ <span class="op">==</span> <span class="st">"VERB"</span>:</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>                result <span class="op">=</span> token.text</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>                <span class="bu">print</span>(<span class="st">"Found proper noun before a verb:"</span>, result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Found proper noun before a verb: Berlin</code></pre>
 </div>
 </div>
 

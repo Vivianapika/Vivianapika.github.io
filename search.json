@@ -18,7 +18,7 @@
     "href": "posts/spaCy/index.html#spacy-101",
     "title": "Learning spaCy",
     "section": "spaCy 101",
-    "text": "spaCy 101\n\n \n\n\n\n\nmindmap\n  root((spaCy))\n    Language object&lt;br/&gt;nlp\n        Tokenizer\n        Processing&lt;br/&gt;pipeline\n            tagger\n            parser\n            ner\n    Doc object\n        tokens\n        Linguistic&lt;br/&gt;annotations\n          give insights into grammatical structure and features\n          ::icon(fa fa-file)\n    Vocab object"
+    "text": "spaCy 101\n\n \n\n\nhash value: 3197928453018144401\nstring value: coffee\n\n\n\n\ncoffee 3197928453018144401 True"
   },
   {
     "objectID": "posts/cen/index.html",

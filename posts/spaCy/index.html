@@ -61,9 +61,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -157,27 +154,15 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="spacy-101">spaCy 101</h2>
 <p><a href="https://spacy.io/usage/spacy-101"></a></p>
 <p><img src="pipeline.svg" class="img-fluid" alt="pipeline"> <img src="architecture.svg" class="img-fluid" alt="Architecture"></p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<div>
-<pre class="mermaid mermaid-js">mindmap
-  root((spaCy))
-    Language object&lt;br/&gt;nlp
-        Tokenizer
-        Processing&lt;br/&gt;pipeline
-            tagger
-            parser
-            ner
-    Doc object
-        tokens
-        Linguistic&lt;br/&gt;annotations
-          give insights into grammatical structure and features
-          ::icon(fa fa-file)
-    Vocab object
-</pre>
+<div class="cell" data-execution_count="1">
+<div class="cell-output cell-output-stdout">
+<pre><code>hash value: 3197928453018144401
+string value: coffee</code></pre>
 </div>
 </div>
+<div class="cell" data-execution_count="2">
+<div class="cell-output cell-output-stdout">
+<pre><code>coffee 3197928453018144401 True</code></pre>
 </div>
 </div>
 

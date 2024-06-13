@@ -163,22 +163,18 @@ ul.task-list li input[type="checkbox"] {
 <div>
 <pre class="mermaid mermaid-js">mindmap
   root((spaCy))
-    Architecture
-      nlp object
-      ::icon(fa fa-book)
-      Doc object
-      Token object
-      Span object
-    Linguistic annotations
-      On effectivness&lt;br/&gt;and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
+    Language object&lt;br/&gt;nlp
+        Tokenizer
+        Processing&lt;br/&gt;pipeline
+            tagger
+            parser
+            ner
+    Doc object
+        tokens
+        Linguistic&lt;br/&gt;annotations
+          give insights into grammatical structure and features
+          ::icon(fa fa-file)
+    Vocab object
 </pre>
 </div>
 </div>

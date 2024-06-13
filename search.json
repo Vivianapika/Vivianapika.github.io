@@ -18,7 +18,7 @@
     "href": "posts/spaCy/index.html#spacy-101",
     "title": "Learning spaCy",
     "section": "spaCy 101",
-    "text": "spaCy 101\n\n \n\n\n\n\nmindmap\n  root((spaCy))\n    Architecture\n      nlp object\n      ::icon(fa fa-book)\n      Doc object\n      Token object\n      Span object\n    Linguistic annotations\n      On effectivness&lt;br/&gt;and features\n      On Automatic creation\n        Uses\n            Creative techniques\n            Strategic planning\n            Argument mapping\n    Tools\n      Pen and paper\n      Mermaid"
+    "text": "spaCy 101\n\n \n\n\n\n\nmindmap\n  root((spaCy))\n    Language object&lt;br/&gt;nlp\n        Tokenizer\n        Processing&lt;br/&gt;pipeline\n            tagger\n            parser\n            ner\n    Doc object\n        tokens\n        Linguistic&lt;br/&gt;annotations\n          give insights into grammatical structure and features\n          ::icon(fa fa-file)\n    Vocab object"
   },
   {
     "objectID": "posts/cen/index.html",
@@ -81,6 +81,6 @@
     "href": "index.html",
     "title": "Blog posts",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n\n\n\n\n  \n\n\n\n\nLearning spaCy\n\n\n\n\n\n\n\nnlp\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2024\n\n\nVivian\n\n\n\n\n\n\n  \n\n\n\n\nSolution for Phone Addiction\n\n\n\n\n\n\n\nadhd\n\n\nminimalism\n\n\n\n\n\n\n\n\n\n\n\nJun 10, 2024\n\n\nVivian\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJun 1, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n\n\n\n\n  \n\n\n\n\nLearning spaCy\n\n\n\n\n\n\n\nnlp\n\n\n\n\n\n\n\n\n\n\n\nJun 12, 2024\n\n\nVivian\n\n\n\n\n\n\n  \n\n\n\n\nSolution for Phone Addiction\n\n\n\n\n\n\n\nadhd\n\n\nminimalism\n\n\n\n\n\n\n\n\n\n\n\nJun 10, 2024\n\n\nVivian\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJun 1, 2024\n\n\nVivian\n\n\n\n\n\n\nNo matching items"
   }
 ]

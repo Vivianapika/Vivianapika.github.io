@@ -16,6 +16,7 @@ This is a post about NLP in a Quarto blog. Welcome!
 
 
 ```{python}
+#| echo: false
 import spacy
 nlp = spacy.load("en_core_web_sm")
 
@@ -29,6 +30,7 @@ print("string value:", nlp.vocab.strings[3197928453018144401])
 ```
 
 ```{python}
+#| echo: false
 # Lexemes: entries in the vocabulary
 doc = nlp("I love coffee")
 lexeme = nlp.vocab["coffee"]

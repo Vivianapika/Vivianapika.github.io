@@ -2,7 +2,7 @@
 title: "Learning spaCy"
 author: "Vivian"
 date: "2024-06-12"
-categories: [nlp]
+categories: [nlp, code]
 image: "image.jpg"
 jupyter: env
 code-fold: true
@@ -11,8 +11,8 @@ code-fold: true
 [Spacy 101](https://spacy.io/usage/spacy-101)
 
 ## Pipeline and Architecture
-![pipeline](pipeline.svg){width=300}
-![Architecture](architecture.svg)
+![pipeline](pipeline.svg)
+![Architecture](architecture.svg){width=70%}
 
 ## Vocab, Lexemes and StringStore
 ```{python}
@@ -80,4 +80,68 @@ for token in doc:
             if doc[token.i + 1].pos_ == "VERB":
                 result = token.text
                 print("Found proper noun before a verb:", result)
+```
+
+## Word vectors and semantic similarity
+```{python}
+# Load a larger pipeline with vectors
+nlp = spacy.load("en_core_web_md")
+
+# Compare two documents
+doc1 = nlp("I like fast food")
+doc2 = nlp("I like pizza")
+print(doc1.similarity(doc2))
+
+# Compare two tokens
+doc = nlp("I like pizza and pasta")
+token1 = doc[2]
+token2 = doc[4]
+print(token1.similarity(token2))
+```
+
+
+```{python}
+# Load a larger pipeline with vectors
+nlp = spacy.load("en_core_web_md")
+
+doc = nlp("I have a banana")
+# Access the vector via the token.vector attribute
+print(doc[3].vector)
+```
+
+## Combining predictions and rules
+```{python}
+# Initialize with the shared vocab
+from spacy.matcher import Matcher
+matcher = Matcher(nlp.vocab)
+
+# Patterns are lists of dictionaries describing the tokens
+pattern = [{"LEMMA": "love", "POS": "VERB"}, {"LOWER": "cats"}]
+matcher.add("LOVE_CATS", [pattern])
+
+# Operators can specify how often a token should be matched
+pattern = [{"TEXT": "very", "OP": "+"}, {"TEXT": "happy"}]
+matcher.add("VERY_HAPPY", [pattern])
+
+# Calling matcher on doc returns list of (match_id, start, end) tuples
+doc = nlp("I love cats and I'm very very happy")
+matches = matcher(doc)
+```
+
+
+PhraseMatcher like regular expressions or keyword search – but with access to the tokens!
+```{python}
+from spacy.matcher import PhraseMatcher
+
+matcher = PhraseMatcher(nlp.vocab)
+
+pattern = nlp("Golden Retriever")
+matcher.add("DOG", [pattern])
+doc = nlp("I have a Golden Retriever")
+
+# Iterate over the matches
+for match_id, start, end in matcher(doc):
+    # Get the matched span
+    span = doc[start:end]
+    print("Matched span:", span.text)
 ```

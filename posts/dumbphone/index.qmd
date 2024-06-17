@@ -1,14 +1,14 @@
 ---
-title: "Solution for Phone Addiction"
+title: "Digital decluttering - Dumbphone attempt"
 author: "Vivian"
 date: "2024-06-10"
 categories: [adhd, minimalism]
 image: "image.jpg"
 ---
 
-## Replace IPhone
+## Replace IPhone with dumbphones to cut screen time
 This is my first step of digital declutter process. 
-Do I want to start the day by playing video games and scrolling the short videos or watching long videos? No I don't. I need some intervention. What can I do to help myself from doing it over and over again? How exactly? It's not fair.
+Do I want to start the day by playing video games and scrolling the short videos or watching long videos? No I don't. I need some intervention. What can I do to help myself from doing it over and over again? How exactly? 
 Maybe one thing I can do is to start the day with reviewing my todoist list. I don't want to see stuff that is overdue to be honest.
 
 [Adults and teens turn to 'dumbphones' to cut screen time](https://www.bbc.com/news/articles/c7227njm45eo)
@@ -27,7 +27,10 @@ In order to get rid of iphone, what do I need to do?
 - [ ] manage wechat storage
 - [ ] Let some people know that I will be switching to a non-Apple phone, and suggest them to send me SMS messages. WhatsApp is another alternative, but for long term solution would better be SMS, since it's going to be useful for a real dumbphone lifestyle.
 
-## IPhone Adjustment for now
+I just pre-ordered Light phone 3 and hopefully it'll be my primary phone and Jelly Star can work as a secondary.
+Remarkable2 is an almost perfect product but it doesn't support DRM protected ebooks.
+
+## Prepare for the transition
 Eventually the goal is to get rid of IPhone, because it's not good for my ADHD brain.
 
 - [x] Apply greyscale color filters to display 
@@ -36,6 +39,29 @@ Eventually the goal is to get rid of IPhone, because it's not good for my ADHD b
     2. some social media app I can't abandon completely because I might lose some contacts by doing that.
 - [x] For social media app that has TikTok-like feature, delete them all and use website on mac if nessasary.
 
-## Dumbphone in the future
-I just pre-ordered Light phone 3 and hopefully it'll be my primary phone and Jelly Star can work as a secondary.
-Remarkable2 is an almost perfect product but it doesn't support DRM protected ebooks.
+## To be continued
+And ideally there should be a boring IPhone for people to customize with app store disable. FOMO or not, people should have to option to buy a dumb IPhone. More to come about what that ideal phone should look like. There are some underlying issue there along with it. It's going to be difficult to overlook. 
+
+A list of things an ideal phone should be able to do:
+
+- Google Map working on phone and car
+- Scan QR code and open the website
+- Text to any other phone with whatever operating system
+- Compatible with Verizon
+- Apply greyscale color filters to display 
+- Small screen
+- Digital Wallet (optional)
+- ChatGPT (optional)
+- Option to disable app store / certain apps permanently
+- Option to disable certain website or only allow certain website permanently
+- 2 step verification app
+- weather
+- note
+- calendar 
+- bluetooth
+- camera
+- podcast
+- music
+- whatsapp (optional)
+
+
